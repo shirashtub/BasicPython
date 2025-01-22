@@ -17,3 +17,11 @@ class TaskManager:
         else:
             print(f"task {task_id} not found")
 
+    def get_task_by_id(self, task_id):
+        return self.tasks.get(task_id)
+
+    def delete_task(self, task_id):
+        if self.tasks.get(task_id):
+            del self.tasks[task_id]
+        else:
+            print(f"task {task_id} not found")

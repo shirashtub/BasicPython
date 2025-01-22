@@ -1,5 +1,5 @@
 from Task import Task
-from TaskManager import TaskManager
+from server.TaskManager import TaskManager
 
 
 def test_create_task():
