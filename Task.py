@@ -7,3 +7,6 @@ class Task:
 
     def mark_completed(self):
         self.completed = True
+
+    def __str__(self):
+        return f"title: {self.title}, description: {self.description}, is completed? {self.completed}"
