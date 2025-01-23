@@ -10,3 +10,10 @@ class Task:
 
     def __str__(self):
         return f"title: {self.title}, description: {self.description}, is completed? {self.completed}"
+
+    def to_dict(self):
+        return {
+            'title': self.title,
+            'description': self.description,
+            'completed': self.completed
+        }

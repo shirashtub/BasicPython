@@ -25,3 +25,6 @@ class TaskManager:
             del self.tasks[task_id]
         else:
             print(f"task {task_id} not found")
+
+    def to_dict(self):
+        return {task_id: task.to_dict() for task_id, task in self.tasks.items()}
